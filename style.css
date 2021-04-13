@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    line-height: 13vh;
+    background-color: #20bf6b;
+    background:url("img/unnamed.png");
+    /* background-size: cover; */
+}
+
+h1{
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    color: rgb(19, 17, 17);
+    text-transform: uppercase ;
+    font-size: 1.8rem;
+    letter-spacing: 15px;
+    text-shadow: 0 1px 0 #efefef,
+                 0 2px 0 #efefef,
+                 0 30px 5px rgba(0,0,0,.1);
+}
+section{
+    height: 80.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(7, 179, 170); */
+    background: linear-gradient( to left,rgb(134, 253, 253),white);
+
+}
+.gameArea{
+    width: 50%;
+    height: 400px;
+    padding: 20px 0;
+    background-color: #2ed573;  
+    background: url('img/H2x1_NSwitchDS_GuessTheWord_image1600w.jpg');
+    background-size: contain;
+    background-color: rgb(7, 179, 170);
+    background-repeat: no-repeat; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Source Sans Pro', sans-serif;
+    box-shadow: 0 8px 6px -6px black;
+}
+.h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+input{
+    width: 40%;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: #dff9fb;
+    color: black;
+    margin: 1rem 0;
+    font: 1.1rem;
+
+}
+button{
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: #2f3542; 
+    margin-top: 10px;
+    color: #264bf0;
+}
+button.btn{
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background: rgb(106, 230, 247);
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.65,-0.25,0.25,1.95);
+}
+button.btn:hover, button.btn:focus, button.btn:active{
+    /* letter-spacing: 0.125rem; */
+    letter-spacing: 0.7rem;
+    word-spacing: 0.2rem;
+}
+.hidden{
+    display: none;
+}
+.msg{
+    background: rgb(193, 248, 83);
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url("img/unnamed.png");
+    font-family: 'Carter One', cursive;
+}
+.footer h2{
+   color: crimson;
+}
+
+@media(max-width: 420px) {
+    header{
+        line-height: 48px;
+    }
+    .gameArea {
+      background-size: contain;
+      width: 80%;
+      height: 90%;
+      background-color: rgb(253, 159, 18);
+    }
+    section{
+        background: rgb(7, 179, 170);
+    }
+  }
